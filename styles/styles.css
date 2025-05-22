@@ -1,56 +1,58 @@
 body {
-    margin: 0;
-    background-image: radial-gradient(#FA5353,#000000);
-
-}
-h1 {
-    font-size: 300%;
-    text-align: center;
+  font-family: sans-serif;
+  color: antiquewhite;
+  background-color: rgb(26, 24, 32);
+  padding: 5%;
 }
 
-h3 {
-    font-family: 'Courier New', Courier, monospace;
+.grid-container {
+  display: grid;
+  grid-template-areas: "profile content";
+  column-gap: 20px;
+  row-gap: 10px;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.profile {
+  grid-area: profile;
+  display: grid;
+  grid-template-areas:
+    "profile-pic name"
+    "resume resume"
+    "icon icon";
+  column-gap: 10px;
+  row-gap: 10px;
+  position: sticky;
+  padding-bottom: 1rem;
+
+  align-self: start;
+  align-content: center;
+  justify-content: center;
+}
+.profile > div {
+  background-color: brown;
+}
+.profile-pic {
+  clip-path: circle();
+  width: 140px;
+}
+.content {
+  grid-area: content;
+}
+.menu {
+  grid-area: icon;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icon {
+  width: 40px;
+  height: 40px;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 30px 20px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.navbar a:hover {
-    background: #ddd;
-    color: black;
-}
-
-.main {
-    padding: 20px;
-    margin-top: 80px;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    height: 1500px;
-    background-color: rgb(250, 83, 83);
-    /* Used in this example to enable scrolling */
-}
-
-.pp {
-    width: 300px;
-    border: 2px solid black;
-}
-
-#grad{
-
+@media only screen and (max-width: 760px) {
+  .grid-container {
+    grid-template-areas:
+      "profile"
+      "content";
+  }
 }
