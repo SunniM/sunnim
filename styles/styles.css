@@ -28,16 +28,12 @@ body {
   align-content: center;
   justify-content: center;
 }
-.profile > div {
-  background-color: brown;
-}
+
 .profile-pic {
   clip-path: circle();
   width: 140px;
 }
-.content {
-  grid-area: content;
-}
+
 .menu {
   grid-area: icon;
   display: flex;
@@ -49,10 +45,68 @@ body {
   height: 40px;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1000px) {
   .grid-container {
     grid-template-areas:
       "profile"
       "content";
   }
+}
+@media only screen and (min-width: 3000px) {
+  .body {
+    background-color: red;
+  }
+}
+
+#align-left {
+  float: left;
+}
+#align-right {
+  float: right;
+}
+
+.content {
+  grid-area: content;
+  padding: 2rem;
+  color: antiquewhite;
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.content > section > h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid antiquewhite;
+  padding-bottom: 0.3rem;
+}
+
+p,
+#education > ul {
+  list-style-type: none;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.year {
+  /* float: right; */
+  font-style: italic;
+  color: #ccc;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1),
+    0 0 30px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
 }

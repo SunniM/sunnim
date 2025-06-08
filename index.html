@@ -54,73 +54,110 @@
       </div>
 
       <div class="content">
-        <h1>About Me</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          pharetra, velit hendrerit condimentum varius, turpis velit volutpat
-          orci, at congue massa nunc at sapien. Mauris nec ex vel augue
-          consectetur pulvinar. Suspendisse luctus justo sit amet lorem dapibus,
-          nec gravida leo facilisis. Praesent bibendum lacinia sapien eu
-          lacinia. Morbi vel porttitor sem. Integer gravida purus ac mattis
-          vulputate. In mattis accumsan tincidunt. Phasellus tempor et velit
-          vitae ullamcorper. Vestibulum egestas eget est eget bibendum.
-          Curabitur ornare faucibus molestie. Maecenas a volutpat dui. In hac
-          habitasse platea dictumst.
-        </p>
-        <h1>Education</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          pharetra, velit hendrerit condimentum varius, turpis velit volutpat
-          orci, at congue massa nunc at sapien. Mauris nec ex vel augue
-          consectetur pulvinar. Suspendisse luctus justo sit amet lorem dapibus,
-          nec gravida leo facilisis. Praesent bibendum lacinia sapien eu
-          lacinia. Morbi vel porttitor sem. Integer gravida purus ac mattis
-          vulputate. In mattis accumsan tincidunt. Phasellus tempor et velit
-          vitae ullamcorper. Vestibulum egestas eget est eget bibendum.
-          Curabitur ornare faucibus molestie. Maecenas a volutpat dui. In hac
-          habitasse platea dictumst.
-        </p>
-        <h1>Experience</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          pharetra, velit hendrerit condimentum varius, turpis velit volutpat
-          orci, at congue massa nunc at sapien. Mauris nec ex vel augue
-          consectetur pulvinar. Suspendisse luctus justo sit amet lorem dapibus,
-          nec gravida leo facilisis. Praesent bibendum lacinia sapien eu
-          lacinia. Morbi vel porttitor sem. Integer gravida purus ac mattis
-          vulputate. In mattis accumsan tincidunt. Phasellus tempor et velit
-          vitae ullamcorper. Vestibulum egestas eget est eget bibendum.
-          Curabitur ornare faucibus molestie. Maecenas a volutpat dui. In hac
-          habitasse platea dictumst.
-        </p>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            I'm a system software specialist with a passion for OS development,
+            graphics, and real-time systems. I build low-level things with
+            high-level impact.
+          </p>
+        </section>
 
-        <h1>Projects</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          pharetra, velit hendrerit condimentum varius, turpis velit volutpat
-          orci, at congue massa nunc at sapien. Mauris nec ex vel augue
-          consectetur pulvinar. Suspendisse luctus justo sit amet lorem dapibus,
-          nec gravida leo facilisis. Praesent bibendum lacinia sapien eu
-          lacinia. Morbi vel porttitor sem. Integer gravida purus ac mattis
-          vulputate. In mattis accumsan tincidunt. Phasellus tempor et velit
-          vitae ullamcorper. Vestibulum egestas eget est eget bibendum.
-          Curabitur ornare faucibus molestie. Maecenas a volutpat dui. In hac
-          habitasse platea dictumst.
-        </p>
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>University of Texas at Dallas</strong>
+              <ul>
+                <li>
+                  MS in Computer Science
+                  <span class="year" style="float: right"
+                    >Aug 2023 &ndash; Dec 2024
+                  </span>
+                </li>
+                <li>
+                  BS in Computer Science
+                  <span class="year" style="float: right"
+                    >Aug 2020 &ndash; May 2023</span
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
 
-        <h1>Areas of Interest</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          pharetra, velit hendrerit condimentum varius, turpis velit volutpat
-          orci, at congue massa nunc at sapien. Mauris nec ex vel augue
-          consectetur pulvinar. Suspendisse luctus justo sit amet lorem dapibus,
-          nec gravida leo facilisis. Praesent bibendum lacinia sapien eu
-          lacinia. Morbi vel porttitor sem. Integer gravida purus ac mattis
-          vulputate. In mattis accumsan tincidunt. Phasellus tempor et velit
-          vitae ullamcorper. Vestibulum egestas eget est eget bibendum.
-          Curabitur ornare faucibus molestie. Maecenas a volutpat dui. In hac
-          habitasse platea dictumst.
-        </p>
+        <section id="projects">
+          <h2>Projects</h2>
+
+          <div class="project-grid">
+            <div class="project-card">
+              <h3>Robotic Chessboard Setup</h3>
+              <span class="year">Aug 2024 &ndash; Dec 2024</span>
+              <ul>
+                <li>
+                  Developed an autonomous robotic system for chessboard setup
+                  using a Fetch mobile manipulator.
+                </li>
+                <li>
+                  Implemented 6D pose estimation with MegaPose to address object
+                  symmetry obstacles.
+                </li>
+                <li>
+                  Simulated and tested the system using ROS and Gazebo for
+                  performance validation.
+                </li>
+                <li>
+                  Utilized RGB-D sensors for real-time piece recognition and
+                  MoveIt! for precise motion planning.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card">
+              <h3>Degree Auditing Tool</h3>
+              <span class="year">Aug 2022 &ndash; Dec 2022</span>
+              <ul>
+                <li>
+                  Designed and developed award-winning auditing tool utilized by
+                  UT Dallas advisors.
+                </li>
+                <li>
+                  Automated degree auditing, reducing manual data entry by 150%
+                  and streamlining workflow.
+                </li>
+                <li>
+                  Collaborated with advisors to refine UI/UX and enhance
+                  usability.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card">
+              <h3>Interactive Ship Tracking Display</h3>
+              <span class="year">Jan 2022 &ndash; May 2022</span>
+              <ul>
+                <li>
+                  Built a Raspberry Pi-based real-time ship tracking system with
+                  WebSocket and Google Maps API.
+                </li>
+                <li>
+                  Developed a local HTTP server for dynamic configuration and
+                  data.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Add more cards as needed -->
+          </div>
+        </section>
+
+        <section id="interests">
+          <h2>Areas of Interest</h2>
+          <p>
+            Operating Systems, Parallel Programming, Graphics Engines, Embedded
+            Systems, Performance Tuning.
+          </p>
+        </section>
       </div>
     </div>
   </body>
